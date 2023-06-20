@@ -10,6 +10,7 @@ M.general = {
     ["<SPACE><SPACE>y"] = { ":%y+<CR>", "copy all to system clipboard" },
   },
   v = {
+    ["<SPACE>s"] = { ":sort<CR>", "sort selected lines" },
     ["<SPACE>y"] = { '"+y', "copy selected to system clipboard" },
   },
 }
