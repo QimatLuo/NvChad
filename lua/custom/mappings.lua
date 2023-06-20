@@ -7,6 +7,10 @@ M.general = {
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
+    ["<SPACE><SPACE>y"] = { ":%y+<CR>", "copy all to system clipboard" },
+  },
+  v = {
+    ["<SPACE>y"] = { '"+y', "copy selected to system clipboard" },
   },
 }
 
