@@ -7,6 +7,8 @@ end
 local b = null_ls.builtins
 
 local sources = {
+  require("custom.languages.lua").null_ls(b.formatting),
+  b.formatting.prettier,
 }
 
 null_ls.setup {

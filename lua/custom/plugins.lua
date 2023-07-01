@@ -23,6 +23,12 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+   "prettier",
+        require("custom.languages.css").mason(),
+        require("custom.languages.html").mason(),
+        require("custom.languages.lua").mason(),
+        require("custom.languages.typescript").mason(),
+        require("custom.languages.vue").mason(),
       },
     },
   },
@@ -30,6 +36,11 @@ local plugins = {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        require("custom.languages.css").treesitter(),
+        require("custom.languages.html").treesitter(),
+        require("custom.languages.lua").treesitter(),
+        require("custom.languages.typescript").treesitter(),
+        require("custom.languages.vue").treesitter(),
       },
       indent = {
         enable = true,
