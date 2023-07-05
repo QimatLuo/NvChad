@@ -8,6 +8,7 @@ M.general = {
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
     ["<SPACE><SPACE>y"] = { ":%y+<CR>", "copy all to system clipboard" },
+    ["<SPACE>sp"] = { ":set paste!<CR>", "toggle paste mode" },
   },
   v = {
     ["<SPACE>s"] = { ":sort<CR>", "sort selected lines" },
